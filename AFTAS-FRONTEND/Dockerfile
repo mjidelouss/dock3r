@@ -1,14 +1,16 @@
-FROM node:18.13.0 as build
+FROM node:18.17.0 as build
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install -g npm@10.3.0
 
 RUN npm install -g @angular/cli
 
 COPY . .
+
+RUN npm install
 
 RUN ng build --configuration=production
 
