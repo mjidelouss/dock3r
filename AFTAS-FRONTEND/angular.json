@@ -21,7 +21,7 @@
               "ng-apexcharts",
               "apexcharts"
             ],
-            "outputPath": "dist/ample-angular-lite",
+            "outputPath": "dist/aftas-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -50,8 +50,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
